@@ -27,7 +27,7 @@ Machine learning methods in variable stars
 - Координаты звезд (`RAJ2000`, `DEJ2000`).
 - Фотометрические параметры (`Vmag`, `Bmag`, `gpmag` и др.).
 - Параметры переменности (`min_mag`, `max_mag`).
-- Целевая переменная (`type`) — бинарный признак, указывающий на принадлежность к переменным звездам.
+- Целевая переменная (`present`) — бинарный признак, указывающий на принадлежность к переменным звездам.
 
 ### Предварительная обработка данных
 - Удалены неинформативные признаки (координаты, минимальная и максимальная звездная величина).
@@ -40,31 +40,27 @@ Machine learning methods in variable stars
 ### Производительность моделей
 
 #### Логистическая регрессия
-- **Accuracy**: 0.999  
-- **Precision**: 0.992  
-- **Recall**: 1.000  
-- **F1-Score**: 0.996  
-- ![Confusion Matrix](samples/lr.png) 
+- **Accuracy**: 0.690  
+- **Precision**: 0.176  
+- **Recall**: 0.578  
+- **F1-Score**: 0.269  
 
 
 #### Метод опорных векторов (SVM)
-- **Accuracy**: 0.999  
-- **Precision**: 0.992  
-- **Recall**: 0.997  
-- **F1-Score**: 0.994  
-- ![Confusion Matrix](samples/svm.png)   
+- **Accuracy**: 0.737  
+- **Precision**: 0.230  
+- **Recall**: 0.708  
+- **F1-Score**: 0.347    
 
 
 #### Случайный лес (Random Forest)
-- **Accuracy**: 0.999  
-- **Precision**: 0.993  
-- **Recall**: 0.998  
-- **F1-Score**: 0.996  
-- ![Confusion Matrix](samples/rf.png)   
+- **Accuracy**: 0.747  
+- **Precision**: 0.240  
+- **Recall**: 0.721  
+- **F1-Score**: 0.361     
 
 ### Градиентный бустинг
-- **Accuracy**: 0.999  
-- **Precision**: 0.993  
-- **Recall**: 0.996
-- **F1-Score**: 0.995  
-- ![Confusion Matrix](samples/gb.png)  
+- **Accuracy**: 0.725  
+- **Precision**: 0.225  
+- **Recall**: 0.731
+- **F1-Score**: 0.345    
